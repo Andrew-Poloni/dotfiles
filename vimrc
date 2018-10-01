@@ -1,3 +1,7 @@
+" AMP
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 " vim: nowrap fdm=marker
 scriptencoding utf-8
 
@@ -22,6 +26,10 @@ if has('mouse')
 endif
 set diffopt=filler,vertical
 set ruler
+
+" AMP
+set number
+set list
 
 if has('nvim')
   set inccommand=nosplit
